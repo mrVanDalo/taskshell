@@ -82,7 +82,7 @@ static void editTask (const std::string& uuid)
 ////////////////////////////////////////////////////////////////////////////////
 static void modifyTask (const std::string& uuid)
 {
-  Color text ("color15 on gray6");
+  Color text ("color15");
   std::string modifications;
   do
   {
@@ -163,8 +163,8 @@ static const std::string banner (
            << total
            << "] ";
 
-  Color progressColor ("color15 on color9");
-  Color descColor     ("color15 on gray6");
+  Color progressColor ("color15");
+  Color descColor     ("color15");
 
   std::string composed;
   if (progress.str ().length () + message.length () + 1 < width)
@@ -181,7 +181,7 @@ static const std::string banner (
 ////////////////////////////////////////////////////////////////////////////////
 static const std::string menu ()
 {
-  return Color ("color15 on gray6").colorize (" (Enter) Mark as reviewed, (s)kip, (e)dit, (m)odify, (c)omplete, (d)elete, (q)uit ") + " ";
+  return Color ("color15").colorize (" (Enter) Mark as reviewed, (s)kip, (e)dit, (m)odify, (c)omplete, (d)elete, (q)uit ") + " ";
 }
 
 ////////////////////////////////////////////////////////////////////////////////
